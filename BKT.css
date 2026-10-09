@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color:gray;
+    background: white;
+}
+/* Phần của div*/
+.FPT{
+    width: 980px;
+    margin:0 auto;
+}
+/* class header */
+.header{
+    height: 100px;
+    background: orangered;
+    display:flex;
+    justify-content: space-between;
+    padding: 18px 5px 0px 24px;
+}
+.search {
+  display: flex;
+  margin-top: 20px;
+  height: 22px;
+}
+.search button:hover { background: #000; }
+/* Phần nav và class của nav */
+.menu{
+    height: 35px;
+    background: #252f54;
+}
+.menu ul{
+    display: flex;
+    padding-left: 238px;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    padding: 0 25px;
+    line-height: 35px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+.menu a:hover,.menu a.active{
+    background: orangered;
+}
+/* Div của banner*/
+.banner { margin-top: 9px; }
+.banner img { width: 980px; height: 450px; }
+/* Class của main */
+.new-title {
+  text-align: center;
+  color: orangered;
+  font-size: 22px;
+  margin: 32px 0 24px;
+}
+/* Class của 6 box*/
+.news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.card {
+  border: 1px solid orangered;
+  padding: 14px 24px 20px;
+  transition: border-color 0.3s;
+}
+.card:hover { 
+    border-color: black; 
+}
+.card h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 17px;
+  line-height: 25px;
+  min-height: 50px;
+  margin-bottom: 12px;
+}
+
+.card h3 a { 
+    color: orangered; 
+    text-decoration: none;
+}
+.card h3 a:hover { 
+    color: orangered; 
+    text-decoration: underline; 
+}
+
+.card img {
+  width: 253px;
+  height: 173px;
+}
+
+.card p {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* class của footer */
+.footer {
+  margin-top: 20px;
+  height: 50px;
+  line-height: 50px;
+  background: orangered;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+/* Phần lienhe.html */
+.contact {
+  width: 520px;
+  margin: 30px auto;
+}
+
+.form-group { margin-bottom: 16px; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f95412;
+}
+
+.form-group textarea { height: 110px; resize: vertical; }
+
+.form-group.invalid input,
+.form-group.invalid textarea { border-color: #d00; }
+
+.error {
+  display: block;
+  margin-top: 4px;
+  min-height: 16px;
+  color: #d00;
+  font-size: 12px;
+}
+
+.btn-send {
+  padding: 10px 30px;
+  border: none;
+  background: #f95412;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-send:hover { background: #272f54; }
